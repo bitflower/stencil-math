@@ -1,0 +1,3 @@
+- install: `yarn install`
+- run: `yarn start`
+  - app is at [http://localhost:3002]

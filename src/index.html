@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=MML_CHTML">
+    </script>
+    <script type="module" src="/build/stencil-math.esm.js"></script>
+    <script nomodule src="/build/stencil-math.js"></script>
+    <link href="/build/app.css" rel="stylesheet" />
+
+    <!-- Your application must load the Roboto and Material Icons fonts. -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="position: absolute; background-color: white; z-index: 1;">
+      OUTSIDE STENCIL:
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mrow>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <msup>
+              <mi>b</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <mo>=</mo>
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </math>
+    </div>
+    <stencil-math></stencil-math>
+  </body>
+</html>
