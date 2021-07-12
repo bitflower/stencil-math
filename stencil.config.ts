@@ -14,4 +14,5 @@ export const config: Config = {
       baseUrl: 'https://myapp.local/',
     },
   ],
+  minifyJs: false,
 };
