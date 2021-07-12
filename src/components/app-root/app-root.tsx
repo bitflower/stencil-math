@@ -1,13 +1,13 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'stencil-math',
+  tag: 'app-root',
+  styleUrl: 'app-root.css',
   shadow: true,
 })
-export class Math {
+export class AppRoot {
   render() {
     const mathML = `
-      <div>INSIDE STENCIL</div>
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mrow>
@@ -30,17 +30,18 @@ export class Math {
       </math>
     `;
     return (
-      <Host>
+      <div>
+        INSIDE STENCIL:
         <div
-          style={{ position: 'absolute', marginTop: '40px' }}
           innerHTML={mathML}
           // ref={ref => {
           //   if (ref) {
           //     ref.innerHTML = mathML;
           //   }
           // }}
-        />
-      </Host>
+        >
+        </div>
+      </div>
     );
   }
 }

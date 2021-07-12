@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=MML_CHTML">
-    </script>
-    <script type="module" src="/build/stencil-math.esm.js"></script>
-    <script nomodule src="/build/stencil-math.js"></script>
-    <link href="/build/app.css" rel="stylesheet" />
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=MML_CHTML"></script>
+  <meta charset="utf-8">
+  <title>Stencil Starter App</title>
+  <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#16161d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
 
-    <!-- Your application must load the Roboto and Material Icons fonts. -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div style="position: absolute; background-color: white; z-index: 1;">
-      OUTSIDE STENCIL:
-      <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <script type="module" src="/build/app.esm.js"></script>
+  <script nomodule src="/build/app.js"></script>
+  <link href="/build/app.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="/assets/icon/icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <div>
+    OUTSIDE STENCIL:
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
         <mrow>
-          <mrow>
-            <msup>
-              <mi>a</mi>
-              <mn>2</mn>
-            </msup>
-            <mo>+</mo>
-            <msup>
-              <mi>b</mi>
-              <mn>2</mn>
-            </msup>
-          </mrow>
-          <mo>=</mo>
           <msup>
-            <mi>c</mi>
+            <mi>a</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>b</mi>
             <mn>2</mn>
           </msup>
         </mrow>
-      </math>
-    </div>
-    <stencil-math></stencil-math>
-  </body>
+        <mo>=</mo>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </math>
+  </div>
+  <app-root></app-root>
+
+</body>
 </html>

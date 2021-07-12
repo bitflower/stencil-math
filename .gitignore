@@ -1,11 +1,7 @@
 dist/
-dist-stencil/
-dist-storybook/
+!www/favicon.ico
 www/
-loader/
-build/
-src/components.d.ts
-storybook-static
+
 *~
 *.sw[mnpcod]
 *.log
@@ -28,4 +24,3 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
-.history
